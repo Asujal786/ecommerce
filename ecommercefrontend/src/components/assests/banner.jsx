@@ -1,0 +1,32 @@
+import React from "react";
+import sreturn from "../../Images/return.jpg";
+import shipping from "../../Images/shipping.png";
+
+function Banner(props) {
+  return (
+    <div className="banner">
+      <div className="bitem">
+        <div className="bimg">
+          <img src={shipping} className="bimg" />
+
+        </div>
+
+        <p> Free Shipping</p> 
+      </div>
+      <div className="bitem">
+        <div className="bimg">
+          <img src={sreturn} className="bimg" />
+        </div>
+        <p> Easy Return</p>
+      </div>
+      <div className="bitem">
+        <div className="bimg">
+          <img src="data:image/png;base64,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" className="bimg" />
+        </div>
+        <p> 24 x 7 Customer Support</p>
+      </div>
+    </div>
+  );
+}
+
+export default Banner;
