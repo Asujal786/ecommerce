@@ -16,6 +16,13 @@
   margin-top: 50px;
 }
 
+.static{
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

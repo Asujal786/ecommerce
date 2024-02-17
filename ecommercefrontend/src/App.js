@@ -15,6 +15,10 @@ import KProductPage from './components/Pages/KProductPage';
 import Cart from './components/Pages/Cart';
 import Profile from './components/Pages/Profile';
 import ADashboard from './components/Pages/admin/ADashboard';
+import AboutUs from './components/Pages/AboutUs';
+import FAQ from './components/Pages/FAQ';
+import TermsAndConditions from './components/Pages/TermsAndConditions';
+
 
 
 function App() {
@@ -37,6 +41,9 @@ function App() {
           <Route path="/kids/product/:id" element={<WProductPage />}></Route>
           <Route path="/women/product/:id" element={<KProductPage />}></Route>
           <Route path="/admin" element={<ADashboard/>}></Route>
+          <Route path="/aboutUs" element={<AboutUs/>}></Route>
+          <Route path="/termsAndConditions" element={<TermsAndConditions/>}></Route>
+          <Route path="/FAQ" element={<FAQ/>}></Route>
         </Routes>
         <Footer/>
     </div>

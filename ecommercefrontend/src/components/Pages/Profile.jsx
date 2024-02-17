@@ -54,8 +54,11 @@ function Profile(props) {
         id="ProfileForm"
         style={{
           width: "80%",
-          alignItems: "space-between", margin:"auto",justifyContent:"center",
-          borderImage:"linear-gradient(to right, yellow, blue) 1",border:"1px solid"
+          alignItems: "space-between",
+          margin: "auto",
+          justifyContent: "center",
+          borderImage: "linear-gradient(to right, yellow, blue) 1",
+          border: "1px solid"
         }}
         onSubmit={handleSubmit}
       >

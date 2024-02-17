@@ -35,10 +35,9 @@ function Footer(props) {
         <div className="fgitem">
           <p className="f-i"> Information</p>
           <ul>
-            <li className="footer-list"> About Us</li>
-            <li className="footer-list"> Terms and Conditions</li>
-            <li className="footer-list"> Privacy Policy</li>
-            <li className="footer-list"> FAQ </li>
+           <Link  className="td" to="/aboutUS" ><li className="footer-list"> About Us</li></Link>
+           <Link   className="td" to="/termsAndConditions" > <li className="footer-list"> Terms and Conditions</li></Link>
+           <Link   className="td" to="/FAQ" > <li className="footer-list"> FAQ </li></Link>
           </ul>
         </div>
        
