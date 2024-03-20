@@ -25,20 +25,20 @@ const UserSchema = new mongoose.Schema({
         required: true
     },
     streetName: {
-        type: String,
-        required:true
+        type: String
+       
     },
     buildingNumber: {
-        type: String,
-        required:true
+        type: String
+        
     },
     city: {
         type: String,
         required:true
     },
     postCode: {
-        type: String,
-        required:true
+        type: String
+        
     },
     isAdmin: {
         type: Boolean,

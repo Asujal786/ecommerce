@@ -6,6 +6,7 @@ const router = require('./Routes/userRoutes');
 const MenProduct=require("./Routes/productRoute");
 const WomenRoute=require("./Routes/WomenRoute");
 const KidsRoute=require("./Routes/KidsRoute");
+const AllProducts=require("./Routes/AllProducts");
 const cors = require('cors');
 require('./connection');
 
@@ -27,4 +28,5 @@ app.use('/users', router);
 app.use("/men/product", MenProduct);
 app.use("/women/product", WomenRoute);
 app.use("/kid/product", KidsRoute);
+app.use("/admin", AllProducts);
 

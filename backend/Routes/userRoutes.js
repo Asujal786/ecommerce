@@ -47,7 +47,7 @@ router.post("/login", async (req, res) => {
     try {
         const { email, password } = req.body;
 
-        console.log("Received Password :", password)
+        console.log("Received Password :", email, password)
 
         const user = await User.findOne({ email });
 
@@ -70,9 +70,11 @@ router.post("/login", async (req, res) => {
 
         const token = jwt.sign({
             id: user._id,
-            fName: user.fName
+            fName: user.fName,
+            isAdmin:user.isAdmin
         }, "EcommerceWebsite",)
         console.log("Login successful");
+
         res.status(200).json({
             message: "Logged In",
             token: token

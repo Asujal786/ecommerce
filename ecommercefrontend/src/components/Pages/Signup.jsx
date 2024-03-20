@@ -48,7 +48,7 @@ function Signup(props) {
       })
       .catch((err) => {
         console.log("There was an error while creating an account " + err);
-        successAlert.innerText="Login Failed"
+        successAlert.innerText="SignUp Failed"
         successAlert.className="alert alert-danger"
         successAlert.visibility="visible"
        

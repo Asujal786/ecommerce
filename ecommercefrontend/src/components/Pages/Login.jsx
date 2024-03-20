@@ -8,6 +8,15 @@ function Login(props) {
   const [loginError, setLoginError] = useState(null);
   const navigate = useNavigate(); 
 
+
+  const parseJwt = (token) => {
+    try {
+      return JSON.parse(atob(token.split('.')[1]));
+    } catch (e) {
+      return null;
+    }
+  };
+
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
@@ -16,7 +25,14 @@ function Login(props) {
       setLoginError(null); 
       const token = response.data.token;
       localStorage.setItem("token", token);
-      
+
+      const decodeToken= parseJwt(token); 
+
+
+      const isAdmin= decodeToken.isAdmin;
+      console.log(isAdmin);
+      console.log(decodeToken);
+
       navigate('/');
     } catch (error) {
       console.log("There has been an error while sending the login data back to the server");

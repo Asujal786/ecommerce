@@ -26,6 +26,9 @@ const Women= new mongoose.Schema({
    },
    size:{
      type:String
+   },
+   image:{
+    type:String
    }
 
 }
